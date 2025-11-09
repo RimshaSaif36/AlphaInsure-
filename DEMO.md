@@ -1,0 +1,78 @@
+#!/bin/bash
+
+# AlphaInsure Hackathon - Complete System Demo
+
+echo "🚀 Starting AlphaInsure - AI-Powered Insurance Platform"
+echo "==============================================="
+
+echo "📊 System Overview:"
+echo "• Frontend: Next.js 14 with React 18 and Tailwind CSS"
+echo "• Backend: Express.js API with MongoDB and Socket.IO"
+echo "• AI Engine: Python Flask with TensorFlow and scikit-learn"
+echo "• Features: Risk assessment, Claims automation, Satellite data analysis"
+echo ""
+
+echo "🔥 Key Features Demonstrated:"
+echo ""
+echo "1. 🎨 STUNNING UI/UX DESIGN"
+echo " ✓ Pink and black cosmic theme"
+echo " ✓ Glassmorphism and gradients"
+echo " ✓ Smooth animations and micro-interactions"
+echo " ✓ Responsive design for all devices"
+echo ""
+
+echo "2. 🛰️ AI-POWERED RISK ASSESSMENT"
+echo " ✓ Satellite imagery analysis using Google Earth Engine"
+echo " ✓ NASA MODIS/Sentinel/Landsat data integration"
+echo " ✓ Real-time weather and environmental monitoring"
+echo " ✓ ML-based risk scoring algorithms"
+echo ""
+
+echo "3. 🤖 AUTOMATED CLAIMS PROCESSING"
+echo " ✓ Computer vision for damage assessment"
+echo " ✓ ResNet50 CNN for image analysis"
+echo " ✓ Fraud detection with Gradient Boosting"
+echo " ✓ Automated decision making with confidence scores"
+echo ""
+
+echo "4. 📈 REAL-TIME DASHBOARD"
+echo " ✓ Live risk alerts and monitoring"
+echo " ✓ Interactive maps with risk visualization"
+echo " ✓ Claims summary and analytics"
+echo " ✓ Portfolio overview and statistics"
+echo ""
+
+echo "5. 🔗 ENTERPRISE INTEGRATION"
+echo " ✓ RESTful API with comprehensive endpoints"
+echo " ✓ WebSocket for real-time updates"
+echo " ✓ JWT authentication and authorization"
+echo " ✓ Rate limiting and security middleware"
+echo ""
+
+echo "🌐 Access Points:"
+echo "• Frontend Application: http://localhost:3000"
+echo "• Backend API: http://localhost:3001 (when running)"
+echo "• AI Engine: http://localhost:5000 (when running)"
+echo ""
+
+echo "📱 Demo Features Available:"
+echo "• Interactive Risk Map with satellite data visualization"
+echo "• Claims processing workflow with file upload"
+echo "• Real-time alerts and notifications"
+echo "• Portfolio management dashboard"
+echo "• Risk assessment with AI scoring"
+echo ""
+
+echo "🎯 Hackathon Highlights:"
+echo "• Built for AI Earth Intelligence Challenge 2025"
+echo "• Complete full-stack implementation"
+echo "• Production-ready architecture"
+echo "• Comprehensive documentation"
+echo "• Demo data for immediate testing"
+echo ""
+
+echo "✨ Frontend is running at: http://localhost:3000"
+echo "✨ Explore the beautiful pink and black themed interface!"
+echo "✨ All components are functional with demo data!"
+echo ""
+echo "🏆 Ready for hackathon demonstration!"

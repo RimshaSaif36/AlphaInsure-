@@ -1,0 +1,1 @@
+export { RecentAlerts } from './RecentAlerts'
