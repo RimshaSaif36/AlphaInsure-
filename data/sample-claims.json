@@ -1,0 +1,66 @@
+[
+  {
+    "claimId": "CLM_2025_001",
+    "propertyId": "PROP_001",
+    "claimType": "Wildfire Damage",
+    "incidentDate": "2025-10-15T14:30:00Z",
+    "claimAmount": 125000,
+    "status": "approved",
+    "submittedAt": "2025-10-16T09:15:00Z",
+    "automation": {
+      "isAutomated": true,
+      "confidenceScore": 92,
+      "automationReason": "Satellite imagery confirms 85% structural damage"
+    },
+    "satelliteEvidence": {
+      "preDisasterImageUrl": "https://example.com/satellite/pre/prop001.jpg",
+      "postDisasterImageUrl": "https://example.com/satellite/post/prop001.jpg", 
+      "damagePercentage": 85,
+      "analysisConfidence": 92
+    },
+    "approvedAmount": 120000,
+    "processingTime": 24
+  },
+  {
+    "claimId": "CLM_2025_002",
+    "propertyId": "PROP_002", 
+    "claimType": "Hurricane Damage",
+    "incidentDate": "2025-09-22T18:45:00Z",
+    "claimAmount": 85000,
+    "status": "processing",
+    "submittedAt": "2025-09-25T11:30:00Z",
+    "automation": {
+      "isAutomated": false,
+      "confidenceScore": 45,
+      "automationReason": "Complex damage pattern requires human review"
+    },
+    "satelliteEvidence": {
+      "preDisasterImageUrl": "https://example.com/satellite/pre/prop002.jpg",
+      "postDisasterImageUrl": "https://example.com/satellite/post/prop002.jpg",
+      "damagePercentage": 62,
+      "analysisConfidence": 78
+    },
+    "processingTime": null
+  },
+  {
+    "claimId": "CLM_2025_003",
+    "propertyId": "PROP_003",
+    "claimType": "Flood Damage", 
+    "incidentDate": "2025-11-01T06:20:00Z",
+    "claimAmount": 67500,
+    "status": "pending_review",
+    "submittedAt": "2025-11-02T14:15:00Z",
+    "automation": {
+      "isAutomated": false,
+      "confidenceScore": 35,
+      "automationReason": "Insufficient satellite data quality"
+    },
+    "satelliteEvidence": {
+      "preDisasterImageUrl": "https://example.com/satellite/pre/prop003.jpg",
+      "postDisasterImageUrl": "https://example.com/satellite/post/prop003.jpg",
+      "damagePercentage": 45,
+      "analysisConfidence": 65
+    },
+    "processingTime": null
+  }
+]

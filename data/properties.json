@@ -1,0 +1,128 @@
+[
+  {
+    "propertyId": "PROP_001",
+    "address": "1247 Sunset Boulevard, Los Angeles, CA 90026",
+    "coordinates": {
+      "latitude": 34.0976,
+      "longitude": -118.2733
+    },
+    "propertyType": "residential",
+    "constructionYear": 2018,
+    "squareFootage": 2450,
+    "value": 1200000,
+    "insurancePremium": 8500,
+    "riskFactors": {
+      "wildfire": 0.85,
+      "earthquake": 0.72,
+      "flood": 0.15,
+      "hurricane": 0.05
+    },
+    "lastInspection": "2025-01-15",
+    "owner": {
+      "name": "Sarah Johnson",
+      "email": "sarah.j@email.com",
+      "phone": "+1-555-0123"
+    }
+  },
+  {
+    "propertyId": "PROP_002", 
+    "address": "3456 Ocean Drive, Miami Beach, FL 33139",
+    "coordinates": {
+      "latitude": 25.7907,
+      "longitude": -80.1300
+    },
+    "propertyType": "condominium",
+    "constructionYear": 2015,
+    "squareFootage": 1800,
+    "value": 950000,
+    "insurancePremium": 12000,
+    "riskFactors": {
+      "wildfire": 0.05,
+      "earthquake": 0.10,
+      "flood": 0.45,
+      "hurricane": 0.78
+    },
+    "lastInspection": "2024-12-20",
+    "owner": {
+      "name": "Carlos Rodriguez",
+      "email": "carlos.r@email.com", 
+      "phone": "+1-555-0456"
+    }
+  },
+  {
+    "propertyId": "PROP_003",
+    "address": "789 River Road, Houston, TX 77024",
+    "coordinates": {
+      "latitude": 29.7866,
+      "longitude": -95.4617
+    },
+    "propertyType": "residential",
+    "constructionYear": 2010,
+    "squareFootage": 3200,
+    "value": 650000,
+    "insurancePremium": 6800,
+    "riskFactors": {
+      "wildfire": 0.20,
+      "earthquake": 0.15,
+      "flood": 0.68,
+      "hurricane": 0.55
+    },
+    "lastInspection": "2025-02-08",
+    "owner": {
+      "name": "Michael Chen",
+      "email": "m.chen@email.com",
+      "phone": "+1-555-0789"
+    }
+  },
+  {
+    "propertyId": "PROP_004",
+    "address": "2134 Mountain View Drive, San Francisco, CA 94114",
+    "coordinates": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "propertyType": "townhouse",
+    "constructionYear": 2019,
+    "squareFootage": 2100,
+    "value": 1850000,
+    "insurancePremium": 15000,
+    "riskFactors": {
+      "wildfire": 0.55,
+      "earthquake": 0.88,
+      "flood": 0.25,
+      "hurricane": 0.08
+    },
+    "lastInspection": "2025-03-01",
+    "owner": {
+      "name": "Emily Davis",
+      "email": "emily.d@email.com",
+      "phone": "+1-555-0321"
+    }
+  },
+  {
+    "propertyId": "PROP_005",
+    "address": "567 Prairie Lane, Tornado Alley, OK 73012",
+    "coordinates": {
+      "latitude": 35.4676,
+      "longitude": -97.5164
+    },
+    "propertyType": "residential",
+    "constructionYear": 2016,
+    "squareFootage": 2800,
+    "value": 385000,
+    "insurancePremium": 4200,
+    "riskFactors": {
+      "wildfire": 0.30,
+      "earthquake": 0.25,
+      "flood": 0.40,
+      "hurricane": 0.35,
+      "tornado": 0.75
+    },
+    "lastInspection": "2024-11-15",
+    "owner": {
+      "name": "David Wilson",
+      "email": "d.wilson@email.com",
+      "phone": "+1-555-0654"
+    }
+  }
+]

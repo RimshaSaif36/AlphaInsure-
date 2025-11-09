@@ -1,0 +1,150 @@
+{
+  "overview": {
+    "totalPolicies": 12847,
+    "totalClaims": 1523,
+    "totalClaimValue": 18750000,
+    "averageProcessingTime": 4.2,
+    "automationRate": 73,
+    "fraudDetectionRate": 12
+  },
+  "recentActivity": {
+    "newClaims": {
+      "count": 23,
+      "period": "last_7_days",
+      "trend": "up",
+      "percentage": 15.3
+    },
+    "claimsProcessed": {
+      "count": 45,
+      "period": "last_7_days", 
+      "trend": "up",
+      "percentage": 8.7
+    },
+    "alertsIssued": {
+      "count": 5,
+      "period": "last_24_hours",
+      "trend": "stable",
+      "percentage": 0
+    }
+  },
+  "claimsByStatus": {
+    "submitted": 18,
+    "processing": 12,
+    "under_review": 7,
+    "approved": 156,
+    "denied": 8,
+    "closed": 1322
+  },
+  "claimsByType": {
+    "wildfire": {
+      "count": 245,
+      "value": 4200000,
+      "averageAmount": 17143
+    },
+    "hurricane": {
+      "count": 189,
+      "value": 3950000,
+      "averageAmount": 20899
+    },
+    "flood": {
+      "count": 167,
+      "value": 2800000,
+      "averageAmount": 16766
+    },
+    "earthquake": {
+      "count": 98,
+      "value": 5100000,
+      "averageAmount": 52041
+    },
+    "hail": {
+      "count": 234,
+      "value": 1580000,
+      "averageAmount": 6752
+    },
+    "tornado": {
+      "count": 45,
+      "value": 890000,
+      "averageAmount": 19778
+    },
+    "other": {
+      "count": 545,
+      "value": 230000,
+      "averageAmount": 422
+    }
+  },
+  "geographicDistribution": {
+    "california": {
+      "policies": 3245,
+      "claims": 456,
+      "claimRate": 14.1,
+      "averageClaim": 22500
+    },
+    "florida": {
+      "policies": 2890,
+      "claims": 398,
+      "claimRate": 13.8,
+      "averageClaim": 18900
+    },
+    "texas": {
+      "policies": 2156,
+      "claims": 298,
+      "claimRate": 13.8,
+      "averageClaim": 16750
+    },
+    "oklahoma": {
+      "policies": 1245,
+      "claims": 156,
+      "claimRate": 12.5,
+      "averageClaim": 12300
+    },
+    "other_states": {
+      "policies": 3311,
+      "claims": 215,
+      "claimRate": 6.5,
+      "averageClaim": 8900
+    }
+  },
+  "riskMetrics": {
+    "highRiskProperties": 847,
+    "mediumRiskProperties": 4532,
+    "lowRiskProperties": 7468,
+    "averageRiskScore": 4.2,
+    "riskTrends": {
+      "increasing": 156,
+      "decreasing": 89,
+      "stable": 602
+    }
+  },
+  "automation": {
+    "totalAutomatedClaims": 1112,
+    "automationSuccessRate": 94.5,
+    "averageAutomationTime": 2.3,
+    "humanReviewRequired": 411,
+    "fraudCasesDetected": 67,
+    "falsePositives": 12
+  },
+  "satelliteAnalysis": {
+    "totalAnalyses": 2456,
+    "successfulAnalyses": 2298,
+    "averageConfidenceScore": 87.3,
+    "damageDetectionAccuracy": 91.2,
+    "prePostComparisons": 1834,
+    "realTimeMonitoring": 156
+  },
+  "financialMetrics": {
+    "monthlyPremiums": 4250000,
+    "monthlyPayouts": 1850000,
+    "reservesRatio": 2.8,
+    "profitMargin": 18.5,
+    "operationalCosts": 450000,
+    "techInvestment": 125000
+  },
+  "timeMetrics": {
+    "averageClaimSubmissionToApproval": 4.2,
+    "fastestClaimProcessed": 0.5,
+    "slowestClaimProcessed": 21.0,
+    "automatedClaimsTime": 2.3,
+    "manualClaimsTime": 8.7,
+    "fraudInvestigationTime": 12.5
+  }
+}

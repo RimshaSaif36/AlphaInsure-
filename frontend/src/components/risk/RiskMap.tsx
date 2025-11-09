@@ -111,39 +111,45 @@ function RiskMapContent() {
     }
   }
 
-  // Load demo risk data for common locations
+  // Load real risk data from properties
   useEffect(() => {
-    const demoData: RiskData[] = [
-      {
-        lat: 25.7617,
-        lng: -80.1918,
-        riskScore: 78,
-        riskLevel: 'high',
-        factors: ['High risk flood zone', 'Hurricane prone area', 'Low elevation']
-      },
-      {
-        lat: 34.0522,
-        lng: -118.2437,
-        riskScore: 65,
-        riskLevel: 'high',
-        factors: ['Wildfire risk', 'Earthquake zone', 'Dense vegetation']
-      },
-      {
-        lat: 29.7604,
-        lng: -95.3698,
-        riskScore: 55,
-        riskLevel: 'medium',
-        factors: ['Flood zone', 'Hurricane path']
-      },
-      {
-        lat: 39.7392,
-        lng: -104.9903,
-        riskScore: 25,
-        riskLevel: 'low',
-        factors: ['Stable weather patterns']
-      }
-    ]
-    setRiskData(demoData)
+    import('../../lib/realDataService').then(({ RealDataService }) => {
+      const properties = RealDataService.getProperties()
+      
+      // Convert properties to risk data format
+      const realRiskData: RiskData[] = properties.slice(0, 50).map(property => {
+        // Calculate overall risk score from risk factors
+        const { wildfire, earthquake, flood, hurricane } = property.riskFactors
+        const overallScore = Math.round((wildfire + earthquake + flood + hurricane) / 4 * 100)
+        
+        // Determine risk level based on score
+        let riskLevel: 'low' | 'medium' | 'high' | 'very_high' = 'low'
+        if (overallScore > 80) riskLevel = 'very_high'
+        else if (overallScore > 60) riskLevel = 'high'
+        else if (overallScore > 30) riskLevel = 'medium'
+        
+        // Generate risk factors based on highest risks
+        const factors: string[] = []
+        if (wildfire > 0.6) factors.push('High wildfire risk zone')
+        if (earthquake > 0.6) factors.push('Seismic activity area')
+        if (flood > 0.6) factors.push('Flood prone region')
+        if (hurricane > 0.6) factors.push('Hurricane impact zone')
+        
+        // Add property-specific factors
+        if (property.constructionYear < 1980) factors.push('Older construction')
+        if (property.value > 500000) factors.push('High-value property')
+        
+        return {
+          lat: property.coordinates.latitude,
+          lng: property.coordinates.longitude,
+          riskScore: overallScore,
+          riskLevel,
+          factors: factors.length > 0 ? factors : ['Standard risk assessment']
+        }
+      })
+      
+      setRiskData(realRiskData)
+    })
   }, [])
 
   // Get color based on risk level
@@ -282,20 +288,26 @@ function RiskMapContent() {
           Click on markers to view details
         </p>
         
-        {/* Demo data display */}
+        {/* Real property locations display */}
         <div className="mt-3 pt-3 border-t border-gray-700">
-          <p className="text-xs font-medium text-pink-200 mb-2">Demo Locations:</p>
-          {riskData.slice(0, 2).map((data, idx) => (
+          <p className="text-xs font-medium text-pink-200 mb-2">Property Locations:</p>
+          {riskData.slice(0, 3).map((data, idx) => (
             <div key={idx} className="text-xs text-gray-300 mb-1">
-              📍 {data.lat.toFixed(2)}, {data.lng.toFixed(2)} - 
+              🏠 {data.lat.toFixed(2)}, {data.lng.toFixed(2)} - 
               <span className={`ml-1 font-medium ${
-                data.riskLevel === 'high' ? 'text-red-400' : 
+                data.riskLevel === 'very_high' ? 'text-red-400' :
+                data.riskLevel === 'high' ? 'text-orange-400' : 
                 data.riskLevel === 'medium' ? 'text-yellow-400' : 'text-green-400'
               }`}>
-                {data.riskLevel.toUpperCase()} ({data.riskScore}%)
+                {data.riskLevel.toUpperCase().replace('_', ' ')} ({data.riskScore}%)
               </span>
             </div>
           ))}
+          {riskData.length > 3 && (
+            <p className="text-xs text-gray-400 mt-1">
+              +{riskData.length - 3} more properties
+            </p>
+          )}
         </div>
       </div>
     </div>

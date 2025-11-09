@@ -1,0 +1,192 @@
+[
+  {
+    "alertId": "ALERT_001",
+    "type": "severe_weather",
+    "severity": "high",
+    "title": "Hurricane Warning - Category 3 Approaching",
+    "description": "Category 3 hurricane approaching coastal properties. Expected landfall in 48 hours with sustained winds of 120 mph.",
+    "affectedProperties": ["PROP_002", "PROP_003"],
+    "location": {
+      "region": "South Florida",
+      "coordinates": {
+        "lat": 25.7617,
+        "lng": -80.1918
+      }
+    },
+    "timeframe": {
+      "issued": "2025-11-08T14:30:00Z",
+      "effective": "2025-11-10T06:00:00Z", 
+      "expires": "2025-11-12T18:00:00Z"
+    },
+    "recommendations": [
+      "Secure outdoor furniture and equipment",
+      "Board up windows and doors",
+      "Evacuate if in mandatory evacuation zone",
+      "Ensure emergency supplies are ready"
+    ],
+    "source": "National Hurricane Center",
+    "impact": {
+      "windSpeed": "115-130 mph",
+      "stormSurge": "8-12 feet",
+      "rainfall": "6-10 inches",
+      "floodRisk": "high"
+    },
+    "automatedActions": {
+      "notificationsSent": 2,
+      "preventiveMeasuresTriggered": true,
+      "claimsTeamAlerted": true
+    }
+  },
+  {
+    "alertId": "ALERT_002",
+    "type": "wildfire",
+    "severity": "extreme",
+    "title": "Red Flag Warning - Extreme Fire Risk",
+    "description": "Critical fire weather conditions with dry winds and low humidity. Evacuation orders in effect for hillside communities.",
+    "affectedProperties": ["PROP_001"],
+    "location": {
+      "region": "Southern California",
+      "coordinates": {
+        "lat": 34.0522,
+        "lng": -118.2437
+      }
+    },
+    "timeframe": {
+      "issued": "2025-11-07T08:00:00Z",
+      "effective": "2025-11-07T12:00:00Z",
+      "expires": "2025-11-09T20:00:00Z"
+    },
+    "recommendations": [
+      "Follow evacuation orders immediately",
+      "Have emergency evacuation kit ready",
+      "Clear defensible space around property",
+      "Monitor emergency broadcasts"
+    ],
+    "source": "CAL FIRE",
+    "impact": {
+      "windSpeed": "45-65 mph",
+      "humidity": "8-15%",
+      "temperature": "85-95°F",
+      "fireRisk": "extreme"
+    },
+    "automatedActions": {
+      "notificationsSent": 1,
+      "preventiveMeasuresTriggered": true,
+      "claimsTeamAlerted": true
+    }
+  },
+  {
+    "alertId": "ALERT_003",
+    "type": "flood",
+    "severity": "moderate",
+    "title": "Flash Flood Watch",
+    "description": "Heavy rainfall expected over next 24 hours. Potential for flash flooding in low-lying areas and poor drainage zones.",
+    "affectedProperties": ["PROP_003", "PROP_004"],
+    "location": {
+      "region": "Houston Metro Area",
+      "coordinates": {
+        "lat": 29.7604,
+        "lng": -95.3698
+      }
+    },
+    "timeframe": {
+      "issued": "2025-11-06T16:00:00Z",
+      "effective": "2025-11-07T00:00:00Z",
+      "expires": "2025-11-08T12:00:00Z"
+    },
+    "recommendations": [
+      "Avoid driving through flooded roads",
+      "Move vehicles to higher ground if possible",
+      "Prepare sandbags for basement protection",
+      "Monitor local emergency alerts"
+    ],
+    "source": "National Weather Service",
+    "impact": {
+      "rainfall": "3-5 inches",
+      "duration": "18-24 hours",
+      "floodRisk": "moderate",
+      "drainageImpact": "high"
+    },
+    "automatedActions": {
+      "notificationsSent": 2,
+      "preventiveMeasuresTriggered": false,
+      "claimsTeamAlerted": false
+    }
+  },
+  {
+    "alertId": "ALERT_004",
+    "type": "severe_weather",
+    "severity": "moderate",
+    "title": "Severe Thunderstorm Warning",
+    "description": "Severe thunderstorms with large hail and damaging winds approaching. Potential for property damage from hail and wind.",
+    "affectedProperties": ["PROP_005"],
+    "location": {
+      "region": "Oklahoma City Area", 
+      "coordinates": {
+        "lat": 35.4676,
+        "lng": -97.5164
+      }
+    },
+    "timeframe": {
+      "issued": "2025-11-05T18:45:00Z",
+      "effective": "2025-11-05T19:30:00Z",
+      "expires": "2025-11-05T23:00:00Z"
+    },
+    "recommendations": [
+      "Move vehicles under cover if possible",
+      "Secure outdoor items that could become projectiles",
+      "Stay indoors during storm passage",
+      "Document any damage with photos"
+    ],
+    "source": "National Weather Service",
+    "impact": {
+      "windSpeed": "60-75 mph",
+      "hailSize": "Quarter to golf ball size",
+      "duration": "2-4 hours",
+      "tornadoRisk": "low"
+    },
+    "automatedActions": {
+      "notificationsSent": 1,
+      "preventiveMeasuresTriggered": false,
+      "claimsTeamAlerted": true
+    }
+  },
+  {
+    "alertId": "ALERT_005",
+    "type": "earthquake",
+    "severity": "low",
+    "title": "Earthquake Advisory",
+    "description": "Minor earthquake activity detected. No immediate danger but residents should review emergency preparedness.",
+    "affectedProperties": ["PROP_001", "PROP_004"],
+    "location": {
+      "region": "San Francisco Bay Area",
+      "coordinates": {
+        "lat": 37.7749,
+        "lng": -122.4194
+      }
+    },
+    "timeframe": {
+      "issued": "2025-11-04T11:15:00Z",
+      "effective": "2025-11-04T11:15:00Z",
+      "expires": "2025-11-05T11:15:00Z"
+    },
+    "recommendations": [
+      "Review earthquake emergency kit",
+      "Check for loose items that could fall",
+      "Ensure emergency contact information is updated",
+      "Inspect property for any new cracks or damage"
+    ],
+    "source": "USGS Earthquake Center",
+    "impact": {
+      "magnitude": "3.2",
+      "depth": "8.5 km",
+      "intensity": "Light",
+      "damageRisk": "minimal"
+    },
+    "automatedActions": {
+      "notificationsSent": 2,
+      "preventiveMeasuresTriggered": false,
+      "claimsTeamAlerted": false
+    }
+  }
+]

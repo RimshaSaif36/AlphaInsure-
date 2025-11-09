@@ -1,0 +1,240 @@
+[
+  {
+    "claimId": "CLM_2025_001",
+    "propertyId": "PROP_001",
+    "claimType": "Wildfire Damage",
+    "status": "approved",
+    "incidentDate": "2025-10-15",
+    "submittedDate": "2025-10-18",
+    "claimAmount": 185000,
+    "approvedAmount": 165000,
+    "description": "Roof damage and smoke damage to interior due to nearby wildfire. Satellite imagery confirms damage extent.",
+    "documents": [
+      {
+        "type": "photo",
+        "description": "Roof damage photos",
+        "timestamp": "2025-10-16"
+      },
+      {
+        "type": "inspection_report", 
+        "description": "Professional damage assessment",
+        "timestamp": "2025-10-17"
+      }
+    ],
+    "satelliteEvidence": {
+      "preDisasterImagery": "satellite_001_pre.jpg",
+      "postDisasterImagery": "satellite_001_post.jpg",
+      "damageAnalysis": {
+        "damagePercentage": 35,
+        "analysisConfidence": 92,
+        "affectedAreas": ["roof", "exterior_walls", "landscaping"]
+      }
+    },
+    "automation": {
+      "isAutomated": true,
+      "confidenceScore": 88,
+      "automationReason": "High confidence satellite verification with supporting documentation",
+      "humanReviewRequired": false
+    },
+    "fraudRisk": {
+      "riskLevel": "low",
+      "riskScore": 15,
+      "factors": ["consistent_damage_pattern", "verified_incident_date", "satellite_confirmation"]
+    },
+    "processingTime": 72,
+    "adjusterNotes": [
+      {
+        "note": "Damage consistent with wildfire exposure. Satellite imagery confirms timeline.",
+        "adjusterName": "Agent AI System",
+        "timestamp": "2025-10-19"
+      }
+    ]
+  },
+  {
+    "claimId": "CLM_2025_002",
+    "propertyId": "PROP_002", 
+    "claimType": "Hurricane Damage",
+    "status": "processing",
+    "incidentDate": "2025-09-22",
+    "submittedDate": "2025-09-25",
+    "claimAmount": 95000,
+    "approvedAmount": null,
+    "description": "Window damage, roof tiles displaced, and water intrusion from Hurricane category 3 winds.",
+    "documents": [
+      {
+        "type": "photo",
+        "description": "Window and roof damage",
+        "timestamp": "2025-09-23"
+      },
+      {
+        "type": "weather_report",
+        "description": "Official hurricane tracking data",
+        "timestamp": "2025-09-22"
+      }
+    ],
+    "satelliteEvidence": {
+      "preDisasterImagery": "satellite_002_pre.jpg",
+      "postDisasterImagery": "satellite_002_post.jpg",
+      "damageAnalysis": {
+        "damagePercentage": 22,
+        "analysisConfidence": 85,
+        "affectedAreas": ["roof", "windows", "pool_area"]
+      }
+    },
+    "automation": {
+      "isAutomated": true,
+      "confidenceScore": 82,
+      "automationReason": "Weather event verified, damage pattern consistent",
+      "humanReviewRequired": false
+    },
+    "fraudRisk": {
+      "riskLevel": "low",
+      "riskScore": 18,
+      "factors": ["verified_weather_event", "damage_timeline_consistent"]
+    },
+    "processingTime": 48,
+    "adjusterNotes": []
+  },
+  {
+    "claimId": "CLM_2025_003",
+    "propertyId": "PROP_003",
+    "claimType": "Flood Damage",
+    "status": "under_review",
+    "incidentDate": "2025-08-12",
+    "submittedDate": "2025-08-15",
+    "claimAmount": 125000,
+    "approvedAmount": null,
+    "description": "Basement flooding due to heavy rainfall exceeding drainage capacity. Foundation and electrical damage.",
+    "documents": [
+      {
+        "type": "photo",
+        "description": "Basement flood damage",
+        "timestamp": "2025-08-13"
+      },
+      {
+        "type": "contractor_estimate",
+        "description": "Restoration cost estimate",
+        "timestamp": "2025-08-14"
+      }
+    ],
+    "satelliteEvidence": {
+      "preDisasterImagery": "satellite_003_pre.jpg", 
+      "postDisasterImagery": "satellite_003_post.jpg",
+      "damageAnalysis": {
+        "damagePercentage": 45,
+        "analysisConfidence": 75,
+        "affectedAreas": ["foundation", "basement", "electrical_systems"]
+      }
+    },
+    "automation": {
+      "isAutomated": false,
+      "confidenceScore": 65,
+      "automationReason": "Moderate confidence - requires specialist review for foundation damage",
+      "humanReviewRequired": true
+    },
+    "fraudRisk": {
+      "riskLevel": "medium",
+      "riskScore": 45,
+      "factors": ["high_claim_amount", "foundation_damage_complexity"]
+    },
+    "processingTime": 120,
+    "adjusterNotes": [
+      {
+        "note": "Foundation damage assessment required. Scheduling structural engineer.",
+        "adjusterName": "Jennifer Martinez",
+        "timestamp": "2025-08-16"
+      }
+    ]
+  },
+  {
+    "claimId": "CLM_2025_004",
+    "propertyId": "PROP_004",
+    "claimType": "Earthquake Damage",
+    "status": "denied",
+    "incidentDate": "2025-07-03",
+    "submittedDate": "2025-07-08",
+    "claimAmount": 75000,
+    "approvedAmount": 0,
+    "description": "Claimed structural cracks due to minor earthquake activity.",
+    "documents": [
+      {
+        "type": "photo",
+        "description": "Wall cracks and foundation issues",
+        "timestamp": "2025-07-04"
+      }
+    ],
+    "satelliteEvidence": {
+      "preDisasterImagery": "satellite_004_pre.jpg",
+      "postDisasterImagery": "satellite_004_post.jpg", 
+      "damageAnalysis": {
+        "damagePercentage": 0,
+        "analysisConfidence": 95,
+        "affectedAreas": []
+      }
+    },
+    "automation": {
+      "isAutomated": true,
+      "confidenceScore": 94,
+      "automationReason": "No visible damage in satellite imagery, pre-existing condition detected",
+      "humanReviewRequired": false
+    },
+    "fraudRisk": {
+      "riskLevel": "high",
+      "riskScore": 85,
+      "factors": ["no_satellite_damage_evidence", "pre_existing_condition", "inconsistent_timeline"]
+    },
+    "processingTime": 24,
+    "adjusterNotes": [
+      {
+        "note": "Satellite analysis shows no new damage. Cracks appear pre-existing based on historical imagery.",
+        "adjusterName": "Agent AI System",
+        "timestamp": "2025-07-09"
+      }
+    ]
+  },
+  {
+    "claimId": "CLM_2025_005",
+    "propertyId": "PROP_005",
+    "claimType": "Hail Damage",
+    "status": "submitted", 
+    "incidentDate": "2025-11-01",
+    "submittedDate": "2025-11-05",
+    "claimAmount": 35000,
+    "approvedAmount": null,
+    "description": "Roof damage from severe hailstorm. Multiple shingles damaged and gutters dented.",
+    "documents": [
+      {
+        "type": "photo",
+        "description": "Hail damage to roof and gutters",
+        "timestamp": "2025-11-02"
+      },
+      {
+        "type": "weather_report",
+        "description": "Hailstorm weather data",
+        "timestamp": "2025-11-01"
+      }
+    ],
+    "satelliteEvidence": {
+      "preDisasterImagery": "satellite_005_pre.jpg",
+      "postDisasterImagery": "satellite_005_post.jpg",
+      "damageAnalysis": {
+        "damagePercentage": 18,
+        "analysisConfidence": 88,
+        "affectedAreas": ["roof", "gutters"]
+      }
+    },
+    "automation": {
+      "isAutomated": true,
+      "confidenceScore": 86,
+      "automationReason": "Weather event verified, damage pattern typical for hail",
+      "humanReviewRequired": false
+    },
+    "fraudRisk": {
+      "riskLevel": "low",
+      "riskScore": 12,
+      "factors": ["verified_weather_event", "typical_damage_pattern"]
+    },
+    "processingTime": null,
+    "adjusterNotes": []
+  }
+]

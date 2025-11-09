@@ -1,0 +1,62 @@
+[
+  {
+    "id": "PROP_001",
+    "address": "123 Sunset Boulevard, Los Angeles, CA 90210",
+    "coordinates": {
+      "latitude": 34.0522,
+      "longitude": -118.2437
+    },
+    "propertyType": "residential",
+    "value": 1250000,
+    "yearBuilt": 2018,
+    "squareFootage": 2400,
+    "riskProfile": {
+      "wildfire": "high",
+      "earthquake": "medium", 
+      "flood": "low",
+      "hurricane": "low"
+    },
+    "insurancePremium": 3200,
+    "lastInspection": "2025-01-15"
+  },
+  {
+    "id": "PROP_002", 
+    "address": "456 Ocean Drive, Miami Beach, FL 33139",
+    "coordinates": {
+      "latitude": 25.7617,
+      "longitude": -80.1918
+    },
+    "propertyType": "condo",
+    "value": 850000,
+    "yearBuilt": 2020,
+    "squareFootage": 1800,
+    "riskProfile": {
+      "wildfire": "low",
+      "earthquake": "low",
+      "flood": "high", 
+      "hurricane": "very_high"
+    },
+    "insurancePremium": 4100,
+    "lastInspection": "2025-02-20"
+  },
+  {
+    "id": "PROP_003",
+    "address": "789 River Road, Houston, TX 77002", 
+    "coordinates": {
+      "latitude": 29.7604,
+      "longitude": -95.3698
+    },
+    "propertyType": "commercial",
+    "value": 2100000,
+    "yearBuilt": 2015,
+    "squareFootage": 5000,
+    "riskProfile": {
+      "wildfire": "low",
+      "earthquake": "low",
+      "flood": "very_high",
+      "hurricane": "medium"
+    },
+    "insurancePremium": 8500,
+    "lastInspection": "2025-03-10"
+  }
+]

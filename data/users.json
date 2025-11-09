@@ -1,0 +1,227 @@
+[
+  {
+    "userId": "USER_001",
+    "email": "sarah.johnson@email.com", 
+    "name": "Sarah Johnson",
+    "phone": "+1-555-0123",
+    "address": {
+      "street": "1247 Hillcrest Drive",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipCode": "90210",
+      "coordinates": {
+        "lat": 34.0901,
+        "lng": -118.4065
+      }
+    },
+    "properties": ["PROP_001"],
+    "policies": [
+      {
+        "policyNumber": "POL_001_2025",
+        "propertyId": "PROP_001",
+        "type": "comprehensive",
+        "coverage": 850000,
+        "premium": 4250,
+        "deductible": 5000,
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "status": "active"
+      }
+    ],
+    "claims": ["CLM_2025_001"],
+    "riskProfile": {
+      "riskLevel": "high",
+      "riskScore": 7.8,
+      "factors": ["wildfire_zone", "drought_prone", "hillside_location"]
+    },
+    "communicationPreferences": {
+      "email": true,
+      "sms": true,
+      "pushNotifications": true,
+      "preferredTime": "morning"
+    },
+    "accountStatus": "active",
+    "joinDate": "2023-03-15",
+    "lastLogin": "2025-11-08T09:30:00Z"
+  },
+  {
+    "userId": "USER_002",
+    "email": "michael.rodriguez@email.com",
+    "name": "Michael Rodriguez", 
+    "phone": "+1-555-0456",
+    "address": {
+      "street": "3421 Ocean Boulevard",
+      "city": "Miami",
+      "state": "FL", 
+      "zipCode": "33139",
+      "coordinates": {
+        "lat": 25.7907,
+        "lng": -80.1300
+      }
+    },
+    "properties": ["PROP_002"],
+    "policies": [
+      {
+        "policyNumber": "POL_002_2025",
+        "propertyId": "PROP_002",
+        "type": "hurricane_plus",
+        "coverage": 675000,
+        "premium": 5200,
+        "deductible": 7500,
+        "startDate": "2025-02-01",
+        "endDate": "2026-01-31",
+        "status": "active"
+      }
+    ],
+    "claims": ["CLM_2025_002"],
+    "riskProfile": {
+      "riskLevel": "high",
+      "riskScore": 8.2,
+      "factors": ["hurricane_zone", "coastal_location", "flood_prone"]
+    },
+    "communicationPreferences": {
+      "email": true,
+      "sms": false,
+      "pushNotifications": true,
+      "preferredTime": "evening"
+    },
+    "accountStatus": "active",
+    "joinDate": "2022-11-20", 
+    "lastLogin": "2025-11-07T18:45:00Z"
+  },
+  {
+    "userId": "USER_003",
+    "email": "jennifer.chen@email.com",
+    "name": "Jennifer Chen",
+    "phone": "+1-555-0789",
+    "address": {
+      "street": "8934 Memorial Drive",
+      "city": "Houston",
+      "state": "TX",
+      "zipCode": "77024",
+      "coordinates": {
+        "lat": 29.7752,
+        "lng": -95.4618
+      }
+    },
+    "properties": ["PROP_003"],
+    "policies": [
+      {
+        "policyNumber": "POL_003_2025", 
+        "propertyId": "PROP_003",
+        "type": "flood_protection",
+        "coverage": 580000,
+        "premium": 3850,
+        "deductible": 4000,
+        "startDate": "2025-04-01",
+        "endDate": "2026-03-31",
+        "status": "active"
+      }
+    ],
+    "claims": ["CLM_2025_003"],
+    "riskProfile": {
+      "riskLevel": "medium",
+      "riskScore": 5.9,
+      "factors": ["flood_zone", "tropical_storm_risk"]
+    },
+    "communicationPreferences": {
+      "email": true,
+      "sms": true,
+      "pushNotifications": false,
+      "preferredTime": "afternoon"
+    },
+    "accountStatus": "active",
+    "joinDate": "2024-01-08",
+    "lastLogin": "2025-11-06T14:20:00Z"
+  },
+  {
+    "userId": "USER_004",
+    "email": "david.thompson@email.com",
+    "name": "David Thompson",
+    "phone": "+1-555-0321",
+    "address": {
+      "street": "567 Nob Hill Road",
+      "city": "San Francisco", 
+      "state": "CA",
+      "zipCode": "94108",
+      "coordinates": {
+        "lat": 37.7926,
+        "lng": -122.4052
+      }
+    },
+    "properties": ["PROP_004"],
+    "policies": [
+      {
+        "policyNumber": "POL_004_2025",
+        "propertyId": "PROP_004",
+        "type": "earthquake_plus",
+        "coverage": 920000,
+        "premium": 6750,
+        "deductible": 10000,
+        "startDate": "2025-06-01",
+        "endDate": "2026-05-31",
+        "status": "active"
+      }
+    ],
+    "claims": ["CLM_2025_004"],
+    "riskProfile": {
+      "riskLevel": "high",
+      "riskScore": 7.5,
+      "factors": ["earthquake_zone", "liquefaction_risk", "hillside_location"]
+    },
+    "communicationPreferences": {
+      "email": false,
+      "sms": true,
+      "pushNotifications": true,
+      "preferredTime": "morning"
+    },
+    "accountStatus": "active",
+    "joinDate": "2023-09-12",
+    "lastLogin": "2025-11-05T11:10:00Z"
+  },
+  {
+    "userId": "USER_005",
+    "email": "lisa.martinez@email.com",
+    "name": "Lisa Martinez",
+    "phone": "+1-555-0654",
+    "address": {
+      "street": "2156 Thunder Road", 
+      "city": "Oklahoma City",
+      "state": "OK",
+      "zipCode": "73120",
+      "coordinates": {
+        "lat": 35.5889,
+        "lng": -97.6447
+      }
+    },
+    "properties": ["PROP_005"],
+    "policies": [
+      {
+        "policyNumber": "POL_005_2025",
+        "propertyId": "PROP_005",
+        "type": "severe_weather",
+        "coverage": 425000,
+        "premium": 2950,
+        "deductible": 3000,
+        "startDate": "2025-08-01",
+        "endDate": "2026-07-31",
+        "status": "active"
+      }
+    ],
+    "claims": ["CLM_2025_005"],
+    "riskProfile": {
+      "riskLevel": "medium",
+      "riskScore": 6.3,
+      "factors": ["tornado_alley", "hail_prone", "severe_weather_zone"]
+    },
+    "communicationPreferences": {
+      "email": true,
+      "sms": true,
+      "pushNotifications": true,
+      "preferredTime": "evening"
+    },
+    "accountStatus": "active",
+    "joinDate": "2024-05-22",
+    "lastLogin": "2025-11-08T20:15:00Z"
+  }
+]
