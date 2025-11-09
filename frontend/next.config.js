@@ -7,10 +7,12 @@ const nextConfig = {
     unoptimized: true
   },
   env: {
-    NEXT_PUBLIC_API_URL:
-      process.env.NEXT_PUBLIC_API_URL || "http://localhost:3002",
-    NEXT_PUBLIC_AI_API_URL:
-      process.env.NEXT_PUBLIC_AI_API_URL || "http://localhost:5000",
+    NEXT_PUBLIC_API_URL: process.env.NODE_ENV === 'production' 
+      ? "https://alphainsure-backend-production.up.railway.app"
+      : "http://localhost:3002",
+    NEXT_PUBLIC_AI_API_URL: process.env.NODE_ENV === 'production'
+      ? "https://alphainsure-ai.onrender.com" 
+      : "http://localhost:5000",
   },
   assetPrefix: process.env.NODE_ENV === 'production' ? '/AlphaInsure-' : '',
   basePath: process.env.NODE_ENV === 'production' ? '/AlphaInsure-' : '',

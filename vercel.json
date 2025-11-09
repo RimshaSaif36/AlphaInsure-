@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "dest": "https://alphainsure-backend-production.up.railway.app/api/$1"
     },
     {
       "src": "/(.*)",
@@ -17,7 +17,8 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://your-backend-url.herokuapp.com",
+    "NEXT_PUBLIC_API_URL": "https://alphainsure-backend-production.up.railway.app",
+    "NEXT_PUBLIC_AI_API_URL": "https://alphainsure-ai.onrender.com",
     "NODE_ENV": "production"
   }
 }
