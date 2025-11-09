@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_API_URL": "https://alphainsure-backend-production.up.railway.app",
+    "NEXT_PUBLIC_AI_API_URL": "https://alphainsure-ai.onrender.com",
+    "NODE_ENV": "production"
+  }
+}
